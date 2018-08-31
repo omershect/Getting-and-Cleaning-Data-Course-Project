@@ -96,13 +96,17 @@ data_set_with_mean_std$Activity_type<-names(Activity_map[unlist(data_set_with_me
 #create a vector of the feature names (only the ones with mean and std)
 Features_Names_mean_std_vector<-Features_names[features_col_names,2]
 
+#Some text cleaning 
+Features_Names_mean_std_vector<-as.character(Features_Names_mean_std_vector)
+Features_Names_mean_std_vector<-gsub("\\(|\\)|-"," ",Features_Names_mean_std_vector)
+
 #Rename the columns of the features (all columns except the first two which are the subjects and the activity )
-colnames(data_set_with_mean_std)[3:ncol(data_set_with_mean_std)] <- as.character(Features_Names_mean_std_vector)
+colnames(data_set_with_mean_std)[3:ncol(data_set_with_mean_std)] <- Features_Names_mean_std_vector
 
 
 # Step 5.From the data set in step 4, creates a second, 
 #independent tidy data set with the average of each variable for each activity and each subject.
 
-
+        
 
 
