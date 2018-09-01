@@ -11,8 +11,11 @@
 
 ## Data - Identiferyes 
 There are two variables which are the identifiers 
-Subject_ID - interger between 1-30 , which identify the 30 subjects that were part of the test 
-Activity_type - Activity type , orginaly an interger which identify the activity type :
+###Subject_ID 
+ interger between 1-30 , which identify the 30 subjects that were part of the test 
+
+###Activity_type 
+Activity type , orginaly an interger which identify the activity type :
 
 1 - WALKING
 2 - WALKING_UPSTAIRS
