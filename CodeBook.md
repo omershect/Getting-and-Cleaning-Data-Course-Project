@@ -119,6 +119,7 @@ The observations which were selected (as they were renamed in the final dataset 
 
 All mean values are numeric
 ## Actions Done 
+
 1.Data Aggregation - The following separate data source were combined into one table : 
 Subject_train  
 y_Train 
@@ -130,6 +131,7 @@ X_test
 2.Selecting the measurements that contain mean or std in their name. The exercise was not explicitly defined the selection criteria, so I choose the broad interpretation, and select all observations that contain std or mean in their names.
 
 3. The Activity index were changed from an interger to a charchter , whhice is the activity names (see above)
+
 4. All observation variables were changed to the name of the observations (see above) with some cleaning work : 
   removed all -, ( and ) 
   Replaced ACC by Acceleerometer
@@ -140,6 +142,7 @@ X_test
   Corrected std  to Standard_Deviation
   Replaced starting t by Time 
   Removed duplicate body body 
+  
 5. The final step is to create the tidy dataset which contains means values of all subjects per activities of the selected above observations.
 
 
