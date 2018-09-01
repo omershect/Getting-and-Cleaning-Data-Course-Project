@@ -1,10 +1,6 @@
 # Getting-and-Cleaning-Data-Course-Project
 This is the Project Course repository of Getting and Cleaning Data Course
 
-
-This is the Project Course repository of Getting and Cleaning Data Course
-
-
 ## Background
 In the past 5 years, we have seen unprecedented innovation in data sciences. Previously limited to the largest of large companies processing massive quantities of data with internally purpose-built engines, today's sophisticated data collection and analysis is democratized through open source data stacks that continue to drive the costs of insights and predictive modeling down. When combined with the enormous amount of data driven from social, mobile, and sensor-driven applications, this new competency in big data is changing the expectations for what is possible at the application level. And it has the potential to create unique business processes that can make or disrupt  companies.
 
