@@ -4,7 +4,7 @@ This is the Project Course repository of Getting and Cleaning Data Course
 ## Background
 In the past 5 years, we have seen unprecedented innovation in data sciences. Previously limited to the largest of large companies processing massive quantities of data with internally purpose-built engines, today's sophisticated data collection and analysis is democratized through open source data stacks that continue to drive the costs of insights and predictive modeling down. When combined with the enormous amount of data driven from social, mobile, and sensor-driven applications, this new competency in big data is changing the expectations for what is possible at the application level. And it has the potential to create unique business processes that can make or disrupt  companies.
 
-## Data Set Information:
+## Data Set Information
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
