@@ -94,25 +94,27 @@ Features_Names_mean_std_vector<-Features_names[features_col_names,2]
 #Some text cleaning 
 Features_Names_mean_std_vector<-as.character(Features_Names_mean_std_vector)
 #Remove ( , ) and -
-Features_Names_mean_std_vector<-gsub("\\(|\\)|-"," ",Features_Names_mean_std_vector)
+Features_Names_mean_std_vector<-gsub("\\(|\\)|-|\\,","",Features_Names_mean_std_vector)
 
 #Replace ACC by Acceleerometer
-Features_Names_mean_std_vector <- gsub("Acc", " Accelerometer ", Features_Names_mean_std_vector)
+Features_Names_mean_std_vector <- gsub("Acc", "Accelerometer", Features_Names_mean_std_vector)
 #Replace Gyro by  Gyroscope
-Features_Names_mean_std_vector <- gsub("Gyro", " Gyroscope ", Features_Names_mean_std_vector)
+Features_Names_mean_std_vector <- gsub("Gyro", "Gyroscope", Features_Names_mean_std_vector)
 #Replace Mag by Magnitude 
-Features_Names_mean_std_vector <- gsub("Mag", " Magnitude ", Features_Names_mean_std_vector)
+Features_Names_mean_std_vector <- gsub("Mag", "Magnitude", Features_Names_mean_std_vector)
 #Repalce starting f or Freq by Frequancy 
-Features_Names_mean_std_vector <- gsub("Freq", " Frequency ", Features_Names_mean_std_vector)
-Features_Names_mean_std_vector <- gsub("^f", "Frequency ", Features_Names_mean_std_vector)
+Features_Names_mean_std_vector <- gsub("Freq", "Frequency", Features_Names_mean_std_vector)
+Features_Names_mean_std_vector <- gsub("^f", "Frequency", Features_Names_mean_std_vector)
 #Correct mean to Mean 
 Features_Names_mean_std_vector <- gsub("mean", "Mean", Features_Names_mean_std_vector)
 #Correct std  to Standard_Deviation
 Features_Names_mean_std_vector <- gsub("std", "Standard_Deviation", Features_Names_mean_std_vector)
 #Replace starting t by Time 
-Features_Names_mean_std_vector <- gsub("^t", "Time ", Features_Names_mean_std_vector)
+Features_Names_mean_std_vector <- gsub("^t", "Time", Features_Names_mean_std_vector)
 #remove duplicate body body 
-Features_Names_mean_std_vector <- gsub("BodyBody", " Body ", Features_Names_mean_std_vector)
+Features_Names_mean_std_vector <- gsub("BodyBody", "Body", Features_Names_mean_std_vector)
+
+
 
 #Rename the columns of the features (all columns except the first two which are the subjects and the activity )
 colnames(data_set_with_mean_std)[3:ncol(data_set_with_mean_std)] <- Features_Names_mean_std_vector
